@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "JersyFont";
+  src: url("Jersey15-Regular.ttf");
+}
+
+body {
+  background-color: #99a1a9;
+  font-family: "JersyFont", Arial, Helvetica, sans-serif;
+  transition: all 0.5s;
+}
+
+a {
+  text-decoration: none !important;
+  color: #343a40 !important;
+}
+a:visited {
+  color: #bf40bf;
+}
+button {
+  background-color: transparent !important;
+  color: #bf40bf !important;
+  border: solid 2px #bf40bf !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+button:hover {
+  background-color: #bf40bf !important;
+  color: #fff !important;
+  border-color: #bf40bf !important;
+}
+
+.top-menu .bg-light {
+  background-color: #e5eaf3 !important;
+}
+
+.top-menu .navbar-light {
+  font-size: 20px;
+}
+
+.video-icon {
+  background-color: #bf40bf;
+  color: #ffff;
+  border-radius: 15%;
+  padding-top: 10px !important;
+  padding-bottom: 6px !important;
+}
+
+.top-menu .navbar-light .navbar-collapse .nav-link:hover {
+  color: #fff !important;
+  background-color: #bf40bf;
+}
+
+.top-menu .navbar-light .navbar-collapse .nav-link:hover,
+.top-menu .navbar-light .navbar-collapse .active > .nav-link {
+  color: #fff !important;
+  background-color: #bf40bf;
+}
+
+.navbar-light .login {
+  color: #bf40bf !important;
+  text-decoration: none;
+}
+
+.navbar-light .login:hover {
+  color: #bf40bf !important;
+  text-decoration: none;
+}
+
+input.form-control:focus,
+button:focus {
+  box-shadow: none !important;
+}
+
+.card .card-icons {
+  position: relative;
+}
+
+time {
+  position: absolute;
+  bottom: 3px;
+  left: 7px;
+  color: #fff;
+  background-color: #494449c3;
+  padding: 3px;
+}
+
+.card-icons .fa-play {
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  color: #494449c3;
+  display: none;
+}
+
+.card:hover .fa-play {
+  display: inline;
+}
+
+.card {
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-0.9%);
+}
+.card .card-title{
+  height: 60px;
+  overflow: hidden ;
+}
+.fa-bars {
+  cursor: pointer;
+}
+
+.side-bar .purple {
+  color: #bf40bf;
+}
+
+.side-bar .list-group-item {
+  width: 17rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.side-bar .list-group-item:hover {
+  color: #fff !important;
+  background-color: #bf40bf !important;
+}
+
+.side-bar .list-group-item:hover .purple {
+  color: #fff;
+}
+
+.side-bar {
+  position: fixed;
+  z-index: 9;
+  left: -17rem;
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  padding-top: 3.8rem;
+}
+
+.side-bar::-webkit-scrollbar {
+  background-color: #c5bb97;
+  width: 8px;
+}
+
+.side-bar::-webkit-scrollbar-thumb {
+  background-color: #808b95;
+}
+
+.side-bar:hover {
+  overflow-y: scroll;
+}
+
+#wrap.toggled .side-bar {
+  left: 0rem;
+}
+
+.black-layer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+.black-layer-toggled {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s ease-in-out;
+}
+
+.watch-page {
+  margin-top: 70px;
+}
+.modal-backdrop {
+  z-index: 0;
+}
+.card-deck .card {
+  height: 400px;
+}
+img.card-img-top {
+  object-fit: cover;
+}
+
+nav .search-icon {
+  color: #bf40bf;
+  cursor: pointer;
+  padding: 15px 10px;
+  position: absolute;
+  right: 90px;
+  display: none;
+}
+nav .search-icon:hover{
+  color: #fff;
+  background-color: #bf40bf;
+
+}
+.card .card-horizontal .card-body p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-body{
+  min-width: 0;
+}
+.search-inp{
+  background-color: #b4b4b4;
+  position: fixed;
+  top: 55px;
+  z-index: 1;
+  display: none;
+  border: none;
+  height: 60px;
+  padding: 6px 21px;
+}
+.search-inp:focus{
+  background-color: #b4b4b4;
+}
+.card-title{
+  height: 30px;
+}
+@media screen and (max-width:1004px) {
+  nav .search-icon{
+    display: inline;
+    margin-left: 20pc !important;;
+  }
+  nav .collapse .form-hide{
+    display: none;
+  }
+}
+@media screen and (min-width:1002px) {
+  .search-inp{
+    display: none !important;
+  }
+}

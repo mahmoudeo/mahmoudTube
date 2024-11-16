@@ -1,0 +1,22 @@
+#search-filters-icon{
+    cursor: pointer;
+}
+.filter-culumn-child{
+    display: none;
+}
+input:checked~span{
+    color: #bf40bf !important;
+}
+
+
+@media screen and (max-width:767px) {
+    .card  .card-top-image{
+        width: 100%;
+    }
+    time{
+        left: 10px;
+    }
+    .card-icons .fa-play{
+        left: 48%;
+    }
+}

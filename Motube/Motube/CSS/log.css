@@ -1,0 +1,37 @@
+.list-group-item.active {
+
+    color: #fff !important;
+    background-color: #bf40bf;
+    border-color: #bf40bf;
+}
+
+.card  .card-body p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.removed{
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    color: #2c3131c7;
+    cursor: pointer;
+}
+h4{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+@media screen and (max-width:767px) {
+    .card  .card-top-image{
+        width: 100%;
+    }
+    time{
+        left: 10px;
+    }
+    .fa-play{
+        left: 48%;
+        top: 55%;
+    }
+}

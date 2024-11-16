@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Motube </title>
+  <script src="https://kit.fontawesome.com/37e28facfd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body class="bg-light container-fluid m-0 p-0">
+  <div class="black-layer black-layer-toggled"></div>
+
+  <div class="top-menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top px-3">
+
+      <i class="fa fa-bars fa-lg m-2" id="toggler"></i>
+      <a class="navbar-brand" href="index.html">
+        Motube
+        <span class="video-icon  px-1"><i class="fas fa-play-circle"></i></span>
+
+      </a>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link mx-2" href="#">Suggession videos <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#">Recently Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#">Recommended videos</a>
+          </li>
+
+
+        </ul>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="SignInModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="SignInModal">New Account</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <label for="user-name" class="col-form-label">UserName:</label>
+                  <input type="text" name="user-name" id="user-name" class="form-control" />
+                  <div class="form-group">
+                    <label for="password" class="col-form-label">Password:</label>
+                    <input type="password" class="form-control" id="password" />
+                  </div>
+                  <div class="form-group"></div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Send message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex my-2 my-lg-0 form-hide">
+          <button class="btn btn-outline-success my-2 my-sm-0 form-hide" type="submit" onclick="location.href='search.html';">
+            Search
+          </button>
+          <input class="form-control mr-sm-2 form-hide" type="search" placeholder="Search" aria-label="Search" />
+        </div>
+      </div>
+      <i class="fas fa-search search-icon ml-4"></i>
+      <a href="#" class="text-dark login d-inline-block ml-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@getbootstrap">
+        SignIn
+      </a>
+    </nav>
+    <input type="search" name="" placeholder="Search at ......" id="" class="form-control search-inp">
+  </div>
+  <div class="row ">
+
+    <div id="wrap">
+      <div class="side-bar">
+        <ul class="list-group list-group-flush  active ">
+          <a href="" class="list-group-item list-group-item-action ">
+            <i class="fas fa-home pr-2 purple"></i>Home Page
+          </a>
+          <a href="" class="list-group-item list-group-item-action ">
+            <i class="fab fa-algolia pr-2 purple"></i>Suggession videos
+          </a>
+          <a href="" class="list-group-item list-group-item-action ">
+            <i class="far fa-plus-square pr-2 purple"></i>Recently videos
+          </a>
+          <a href="" class="list-group-item list-group-item-action ">
+            <i class="fas fa-fire-alt pr-2 purple"></i>Popular videos
+          </a>
+          <a href="" class="list-group-item list-group-item-action ">
+            <i class="fas fa-fire pr-2 purple"></i>My videos
+          </a>
+          <a href="log.html" class="list-group-item list-group-item-action ">
+            <i class="fas fa-history pr-2 purple"></i>History Page
+          </a>
+          <a href="" class="list-group-item list-group-item-action ">
+            <i class="fas fa-share-square pr-2 purple"></i>Subscribtions
+          </a>
+          <a href="" class="list-group-item list-group-item-action ">
+            <i class="fas fa-film pr-2 purple"></i>Films and movies
+          </a>
+          <a href="" class="list-group-item list-group-item-action ">
+            <i class="fas fa-gamepad pr-2 purple"></i>Games
+          </a>
+          <a href="" class="list-group-item list-group-item-action ">
+            <i class="fas fa-tshirt pr-2 purple"></i>Clothes
+          </a>
+          <a href="" class="list-group-item list-group-item-action ">
+            <i class="fas fa-graduation-cap pr-2 purple"></i>Learning
+          </a>
+          <a href="" class="list-group-item list-group-item-action ">
+            <i class="fas fa-cog pr-2 purple"></i>Settings
+          </a>
+          <a href="" class="list-group-item list-group-item-action ">
+            <i class="fas fa-question pr-2 purple"></i>Help & support
+          </a>
+          <a href="https://academy.hsoub.com" class="list-group-item list-group-item-action ">
+            Motube website . <br> By Mahmoud Elsaeed &copy;
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Body-->
+  <div class="content  p-4 container-fluid">
+    <div class="">
+      <h3 class="text text-left mb-3 mt-5  ml-3">
+        Suggession Videos:
+      </h3>
+    </div>
+    <div class="row no-gutters">
+      <div class="card-deck">
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+                <a href="watch.html"><img style='height:170px' src="img/thumbnail/database.jpg" class="card-img-top"
+                    alt="..." />
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>04:34:56</time>
+                </a>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Learn MYSQL FAST!</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 9K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 9 months </i></small>
+              </div>
+              <a href="channel.html">
+                <img src="img/ch-logo.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Hsoub Academy</span>
+              </a>
+
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+                <a href="watch.html"><img style='height:170px' src="img/thumbnail/app.jpg" class="card-img-top"
+                    alt="..." />
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>14:55</time>
+                </a>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Web Programming Review !</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 230K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 5 days </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/khamsat.jpg" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Khamsat </span>
+              </a>
+            </div>
+          </div>
+        </a>
+
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+                <a href="watch.html"><img style='height:170px' src="img/anita-austvika-8T0D_pT2Sbs-unsplash.jpg"
+                    class="card-img-top" alt="..." />
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>17:25</time>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>How does rose grow?</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 2.1m views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 3 months </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/icons/lb.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Nature discovery</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons"><img style='height:170px' src="img/thumbnail/devtools.jpg" class="card-img-top"
+                  alt="..." />
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>08:56</time>
+                </a>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>google dev tools</h5>
+                  <p class="card-text text-dark">
+
+                  </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 900K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 9 months </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/ch-logo.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Hsoub Academy</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+                <a href="watch.html"><img style='height:170px' src="img/thumbnail/cordova.jpg" class="card-img-top"
+                    alt="..." />
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>12:04</time>
+                </a>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>cordova!</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 9K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 9 months </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/ch-logo.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Hsoub Academy</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+                <a href="watch.html"><img style='height:170px' src="img/thumbnail/khamsat2.jpg" class="card-img-top"
+                    alt="..." />
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>23:08</time>
+                </a>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Khamsat Website !</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 9K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 9 months </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/khamsat.jpg" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Khamsat</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons"><img style='height:170px' src="img/thumbnail/frontend.jpg" class="card-img-top"
+                  alt="..." />
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>25:17</time>
+                </a>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Is frontend Good?</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 7m views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 2 Years </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/ch-logo.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Hsoub Academy</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+
+                <img style='height:170px' src="img/thumbnail/restful.jpg" class="card-img-top" alt="..." />
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>46:49</time>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Learn restful algorithm</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 9K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 9 months </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/ch-logo.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Hsoub Academy</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons"><img style='height:170px' src="img/thumbnail/khamsat3.png" class="card-img-top"
+                  alt="..." />
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>04:24</time>
+                </a>
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Join in khamsat now !</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 127K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 2 months </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/khamsat.jpg" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">KHAMSAT</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+                <img style='height:170px' src="img/neom-EQ7x8WJMR4Q-unsplash.jpg" class="card-img-top" alt="..." />
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>10:13</time>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Life in seas and oceans !</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 45K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 11 months </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/icons/lb.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Nature discovery</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+                <img style='height:170px' src="img/neom-StbFt6TU1xs-unsplash.jpg" class="card-img-top" alt="..." />
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>46:49</time>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>We tried the life in dessert for 24
+                  Hours !</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 9K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 9 months </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/ch-logo.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Hsoub Academy</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+
+                <img style='height:170px' src="img/thumbnail/khamsat4.png" class="card-img-top" alt="..." />
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>04:25</time>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Khamsat , the best freelance website
+                  !</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 9K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 9 months </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/khamsat.jpg" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">KHAMSAT</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+                <img style='height:170px' src="img/vidar-nordli-mathisen-DWM0vwyEAX0-unsplash.jpg" class="card-img-top"
+                  alt="..." />
+
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>50:34</time>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Life in the highest mountaines in the
+                  world !</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 467K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 2 Days </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/icons/lb.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Nature Discovery</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+
+                <img style='height:170px' src="img/thumbnail/mostaql.png" class="card-img-top" alt="..." />
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>03:46</time>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Mostaql Website</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 900K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 1 year </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/mostaql.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Mostaql</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+                <img style='height:170px' src="img/thumbnail/mostaql1.jpg" class="card-img-top" alt="..." />
+
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>5:49</time>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Mostaql work now!</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 340K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 23 hours </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/mostaql.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Mostaql</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+                <img style='height:170px' src="img/thumbnail/ruby.jpg" class="card-img-top" alt="..." />
+
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>03:40:49</time>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Learn Ruby language now !</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 8.5B views! </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 2 hours! </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/ch-logo.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Hsoub Academy</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+                <img style='height:170px' src="img/olegsoyka-YVxzd0Fy1c4-unsplash.jpg" class="card-img-top" alt="..." />
+
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>15:00</time>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>beauty places in EARTH !</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 76K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 9 months </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/icons/lb.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Nature Discovery</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+
+                <img style='height:170px' src="img/thumbnail/khamsat1.png" class="card-img-top" alt="..." />
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>17:49</time>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>features about KHAMSAT</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 478K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 5 months </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/khamsat.jpg" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">KHAMSAT</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+
+                <img style='height:170px' src="img/thumbnail/php.jpg" class="card-img-top" alt="..." />
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>08:45:00</time>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Learn PHP</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 789K views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 10 months </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/ch-logo.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Hsoub Academy</span>
+              </a>
+            </div>
+          </div>
+        </a>
+        <a href="watch.html">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="card ml-4 mb-3 bg-light" style='cursor:pointer;'>
+              <div class="card-icons">
+
+                <img style='height:170px' src="img/thumbnail/ruby1.jpg" class="card-img-top" alt="..." />
+                <a href="watch.html">
+                  <i class="fas fa-play fa-3x "></i>
+                  <time>14:15</time>
+                </a>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-secondary " style='min-block-size:20px'>Ruby and shopify</h5>
+
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><i class="fas fa-film" style="letter-spacing:1px;; "> 3m views </i> <i
+                    class="fas fa-clock d-block " style="letter-spacing: 1px; "> from 9 months </i></small></small>
+              </div>
+              <a href="channel.html">
+                <img style='max-height:170px' src="img/ch-logo.png" alt="" width='30' class="rounded-circle my-2 mx-3">
+                <span class="card-text text-dark">Hsoub Academy</span>
+              </a>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="JavaScript/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+.card:hover {
+  transform: translateY(0%);
+}
+.watch-icons {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+.watch-icons i {
+  cursor: pointer;
+  background-color: #bf40bf !important;
+  color: #fff !important;
+}
+.show-more-less {
+  border-radius: 5px;
+}
+.card-title {
+  height: 30px !important;
+}
+.video-p {
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.video-main-p {
+  transition: all 0.5s;
+}
+.hide {
+  display: none;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.card-inner {
+  display: none;
+}
+.btn-actived {
+  color: rgb(255, 255, 255) !important;
+  background-color: #5e405e !important;
+}
+.card .btn {
+  background-color: transparent;
+  border-color: #bf40bf;
+  color: #bf40bf !important;
+}
+.card .btn:hover {
+  background-color: #bf40bf;
+  border-color: #bf40bf;
+  color: #fff !important;
+}
+.card-icons .fa-play {
+  left: 45%;
+}
+@media screen and (max-width: 1144px) {
+  .show-more-less {
+    margin-bottom: 50px !important;
+  }
+}
+@media screen and (max-width: 1144px) and (min-width: 991px) {
+  .channel-hypertext {
+    display: block;
+  }
+  .channel-hypertext img {
+    margin-left: 0px !important;
+  }
+}
+@media screen and (max-width: 508px) {
+  .channel-hypertext {
+    display: block;
+  }
+  .channel-hypertext img {
+    margin-left: 0px !important;
+  }
+}
